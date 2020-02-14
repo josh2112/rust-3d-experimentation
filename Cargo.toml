@@ -1,0 +1,18 @@
+[package]
+name = "threedgame"
+version = "0.1.0"
+authors = ["Joshua Foster <josh2112@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.dev]
+opt-level = 2
+
+[dependencies]
+gfx = "0.18.2"
+glutin = "0.20.0"
+gfx_window_glutin = "0.30.0"
+
+image="*"
+cgmath="*"
