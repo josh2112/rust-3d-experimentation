@@ -16,3 +16,5 @@ gfx_window_glutin = "0.30.0"
 
 image="*"
 cgmath="*"
+tobj="*"
+arrayref="*"

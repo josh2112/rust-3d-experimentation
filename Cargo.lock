@@ -36,6 +36,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "arrayref"
+version = "0.3.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a4c527152e37cf757a3f78aae5a06fbeefdb07ccc535c980a3208ee3060dd544"
+
+[[package]]
 name = "arrayvec"
 version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1048,11 +1054,13 @@ dependencies = [
 name = "threedgame"
 version = "0.1.0"
 dependencies = [
+ "arrayref",
  "cgmath",
  "gfx",
  "gfx_window_glutin",
  "glutin",
  "image",
+ "tobj",
 ]
 
 [[package]]
@@ -1065,6 +1073,12 @@ dependencies = [
  "lzw",
  "miniz_oxide",
 ]
+
+[[package]]
+name = "tobj"
+version = "0.1.11"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1ed6f4ec3b7c466b7a72471179e55e2b6a7452b53691b6115185132fc2e06b1c"
 
 [[package]]
 name = "unicode-xid"
