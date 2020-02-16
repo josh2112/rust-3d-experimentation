@@ -111,8 +111,8 @@ pub fn main() {
                         }, ..
                     } | CloseRequested => running = false,
                     Resized( size ) => {
+                        window_ctx.resize( size.to_physical( window_ctx.get_hidpi_factor()));
                         gfx_window_glutin::update_views( &window_ctx, &mut data.out, &mut depth_view );
-                        
                         let aspect = (size.width/size.height) as f32;
                         locals.proj = cgmath::perspective( Deg(60.0f32), aspect, 0.1, 1000.0).into();
                     },
