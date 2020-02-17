@@ -13,6 +13,7 @@ opt-level = 2
 gfx = "0.18.2"
 glutin = "0.20.0"
 gfx_window_glutin = "0.30.0"
+gfx_device_gl = "0.16.2"
 
 image="*"
 cgmath="*"
